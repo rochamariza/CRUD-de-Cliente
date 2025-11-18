@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+    <title>Home</title>
+</head>
+<body>
+    <h1 class="is-size-2 has-text-centered has-text-weight-semibold m-4">CRUD de Clientes</h1>
+    {% for cliente in clientes %}
+        <div class="columns" style="max-width: 60%">
+            <div class="column"><h1 class="is-size-5 has-text-weight-semibold">{{ cliente.nome }}</h1></div>
+            <div class="column"><h1 class="is-size-5 has-text-weight-semibold">{{ cliente.email }}</h1></div>
+        </div>
+    {% endfor %}
+</body>
+</html>
