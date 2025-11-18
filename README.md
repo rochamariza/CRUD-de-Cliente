@@ -1,0 +1,1 @@
+## Exercício de conceitos de CRUD utilizando Flask e Poetry do Python
